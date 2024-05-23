@@ -1,0 +1,5 @@
+ssh -i "authapp.pem" ec2-user@ec2-3-107-51-14.ap-southeast-2.compute.amazonaws.com
+
+cd C:\Users\sagar\OneDrive\Documents\aws_credential
+
+chmod +x node_modules/.bin/nodemon

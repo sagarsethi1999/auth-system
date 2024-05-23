@@ -1,0 +1,29 @@
+/* CSS for profile details */
+#profileDetails {
+    max-width: 400px; /* Adjust max width as needed */
+    margin: 0 auto; /* Center the profile details */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS for individual profile detail items */
+#profileDetails p {
+    margin: 10px 0; /* Add vertical spacing between detail items */
+}
+
+#profileDetails img {
+    width: 150px; /* Set width of the profile photo */
+    height: 150px; /* Set height of the profile photo */
+  
+    margin-top: 10px; /* Add spacing above the profile photo */
+    display: block; /* Ensure the image is centered */
+    margin: 0 auto; /* Center the image horizontally */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow effect to the image */
+}
+
+/* CSS for strong tags within profile details */
+#profileDetails strong {
+    margin-right: 5px; /* Add spacing to the right of strong tags */
+}

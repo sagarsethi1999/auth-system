@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm">
+            <h2>Register</h2>
+            <label for="photo">Photo (Link):</label>
+            <input type="text" id="photo" name="photo" required>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" required></textarea>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <!-- Add radio button for admin status -->
+            <label for="isAdmin">Admin:</label>
+            <input type="radio" id="isAdmin" name="isAdmin" value="true">
+            <label for="isAdmin">Yes</label>
+            <input type="radio" id="isAdmin" name="isAdmin" value="false" checked>
+            <label for="isAdmin">No</label>
+    
+            <button type="submit">Register</button>
+            <button type="button" onclick="redirectToLogin()">Login</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.6/axios.min.js"></script>
+    <script src="reg.js"></script>
+</body>
+</html>

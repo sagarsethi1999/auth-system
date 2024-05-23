@@ -4,6 +4,9 @@ const userRoutes = require('./routes/userRoutes');
 const sequelize = require('./db/sequelize');
 const User = require('./models/User');
 const cors = require('cors');
+const fs = require('fs');
+const url = require('url');
+const path = require('path');
 const { FORCE } = require('sequelize/lib/index-hints');
 
 
@@ -26,6 +29,26 @@ sequelize
   });
 
 app.use('/api/users', userRoutes);
+
+// app.use((req, res) => {
+//   console.log(`url`, req.url);
+//   res.sendFile(path.join(__dirname,`public/${req.url}`))
+// })
+app.use((req, res, next) => {
+  const parsedUrl = url.parse(req.url);
+  const pathname = parsedUrl.pathname;
+  const sanitizedPath = path.normalize(pathname).replace(/^(\.\.[\/\\])+/, '');
+  const filePath = path.join(__dirname, 'public', sanitizedPath);
+
+  console.log(`Request URL: ${req.url}`);
+  console.log(`Sanitized Path: ${sanitizedPath}`);
+
+  if (fs.existsSync(filePath)) {
+    res.sendFile(filePath);
+  } else {
+    res.status(404).send('File not found');
+  }
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const userId = localStorage.getItem('userId');
 
     // Fetch user details with authentication token
-    axios.get(`http://localhost:3000/api/users/${userId}`, {
+    axios.get(`http://3.107.51.14:3000/api/users/${userId}`, {
         headers: {
             'Authorization': token
         }

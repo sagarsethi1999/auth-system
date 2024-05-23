@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     try {
         // Fetch user details with authorization header
-        const response = await axios.get(`http://localhost:3000/api/users/detail/${userId}`, {
+        const response = await axios.get(`http://3.107.51.14:3000/api/users/detail/${userId}`, {
             headers: {
                 Authorization: token
             }

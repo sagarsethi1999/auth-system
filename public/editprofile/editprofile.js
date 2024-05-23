@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     try {
         // Fetch user details
-        const response = await axios.get(`http://localhost:3000/api/users/${userId}`, {
+        const response = await axios.get(`http://3.107.51.14:3000/api/users/${userId}`, {
             headers: { Authorization: token }
         });
         const userData = response.data;
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                 photo: document.getElementById('photo').value
             };
             // Update user details
-            await axios.put(`http://localhost:3000/api/users/${userId}`, updatedUserData, {
+            await axios.put(`http://3.107.51.14:3000/api/users/${userId}`, updatedUserData, {
                 headers: { Authorization: token }
             });
             alert('Profile updated successfully');
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             const confirmation = confirm(`Are you sure you want to make your profile ${visibilityText}?`);
             if (confirmation) {
                 // Update profile visibility
-                await axios.put(`http://localhost:3000/api/users/${userId}/visibility`, { isPublic: newVisibility }, {
+                await axios.put(`http://3.107.51.14:3000/api/users/${userId}/visibility`, { isPublic: newVisibility }, {
                     headers: { Authorization: token }
                 });
                 // Update button text

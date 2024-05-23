@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       try {
           // Send registration data to the backend
-          const response = await axios.post('http://localhost:3000/api/users/register', {
+          const response = await axios.post('http://3.107.51.14:3000/api/users/register', {
               photo,
               name,
               bio,

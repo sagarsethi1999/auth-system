@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Fetch logged-in user's details to show profile photo
-    axios.get(`http://localhost:3000/api/users/${userId}`, {
+    axios.get(`http://3.107.51.14:3000/api/users/${userId}`, {
         headers: { 'Authorization': token }
     })
     .then(response => {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Fetch all profiles based on the user role
-    axios.get('http://localhost:3000/api/users', {
+    axios.get('http://3.107.51.14:3000/api/users', {
         headers: { 'Authorization': token }
     })
     .then(response => {

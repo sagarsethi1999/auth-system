@@ -4,7 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
   
-    axios.post('http://localhost:3000/api/users/login', { 
+    axios.post('http://3.107.51.14:3000/api/users/login', { 
       email: email,
       password: password
     })

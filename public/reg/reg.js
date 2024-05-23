@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
           });
 
           
+
           // Handle success
           alert('Registration successful');
           // Redirect to login page

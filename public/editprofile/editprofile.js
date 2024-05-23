@@ -44,8 +44,9 @@ document.addEventListener('DOMContentLoaded', async function() {
             // Redirect back to profile page
             window.location.href = '../profile/profile.html';
         });
-
         
+
+
         // Handle profile visibility toggle
         toggleVisibilityButton.addEventListener('click', async function() {
             const newVisibility = !userData.isPublic;

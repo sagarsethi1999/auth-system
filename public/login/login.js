@@ -22,6 +22,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
           alert('Invalid email or password');
       }
   })
+
   
   .catch(error => {
     console.error('Error logging in:', error);

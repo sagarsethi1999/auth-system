@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             profilesContainer.appendChild(profileCard);
         });
     })
+    
     .catch(error => {
         console.error('Error loading profiles:', error);
     });

@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
               isAdmin
           });
 
+          
           // Handle success
           alert('Registration successful');
           // Redirect to login page

@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p><strong>Public Profile:</strong> ${userData.isPublic ? 'Yes' : 'No'}</p>
         `;
     }
+    
 
     // Edit button functionality
     const editButton = document.getElementById('editButton');

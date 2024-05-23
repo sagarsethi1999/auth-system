@@ -29,3 +29,4 @@ document.addEventListener('DOMContentLoaded', async function() {
         alert('Error fetching user details. Please try again.');
     }
 });
+

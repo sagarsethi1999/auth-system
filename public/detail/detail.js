@@ -12,22 +12,24 @@ document.addEventListener('DOMContentLoaded', async function() {
         });
         const userData = response.data;
 
-        // Display user details (excluding password)
+        // Update profile details dynamically
         const profileDetailsDiv = document.getElementById('profileDetails');
         profileDetailsDiv.innerHTML = `
-        <img src="${userData.photo}" alt="Profile Photo">
-            <p><strong>Name:</strong> ${userData.name}</p>
-            <p><strong>Bio:</strong> ${userData.bio}</p>
-            <p><strong>Phone:</strong> ${userData.phone}</p>
-            <p><strong>Email:</strong> ${userData.email}</p>
-            <p><strong>Public Profile:</strong> ${userData.isPublic ? 'Yes' : 'No'}</p>
-            
-            
+            <div class="profile-card">
+                <div class="profile-header">
+                    <img src="${userData.photo}" alt="Profile Photo" class="profile-photo">
+                    <h2 class="profile-name">${userData.name}</h2>
+                </div>
+                <div class="profile-info">
+                    <p class="profile-bio"><strong>Bio:</strong> ${userData.bio}</p>
+                    <p class="profile-phone"><strong>Phone:</strong> ${userData.phone}</p>
+                    <p class="profile-email"><strong>Email:</strong> ${userData.email}</p>
+                    <p class="profile-public"><strong>Public Profile:</strong> ${userData.isPublic ? 'Yes' : 'No'}</p>
+                </div>
+            </div>
         `;
     } catch (error) {
         console.error('Error fetching user details:', error);
         alert('Error fetching user details. Please try again.');
     }
 });
-
-

@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Function to redirect to login page
-  function redirectToLogin() {
-      window.location.href = '../login/login.html';
-  }
+  document.getElementById('redirectToLogin').addEventListener('click', () => {
+    
+    window.location.href = '../login/login.html';
+});
 });

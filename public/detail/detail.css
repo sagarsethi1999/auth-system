@@ -1,29 +1,71 @@
-/* CSS for profile details */
-#profileDetails {
-    max-width: 400px; /* Adjust max width as needed */
-    margin: 0 auto; /* Center the profile details */
+/* detail.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background: url('https://source.unsplash.com/1600x900/?nature,forest') no-repeat center center fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* CSS for individual profile detail items */
-#profileDetails p {
-    margin: 10px 0; /* Add vertical spacing between detail items */
+.profile-card {
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-#profileDetails img {
-    width: 150px; /* Set width of the profile photo */
-    height: 150px; /* Set height of the profile photo */
-  
-    margin-top: 10px; /* Add spacing above the profile photo */
-    display: block; /* Ensure the image is centered */
-    margin: 0 auto; /* Center the image horizontally */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow effect to the image */
+.profile-header {
+    background-color: #6cbad19b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-/* CSS for strong tags within profile details */
-#profileDetails strong {
-    margin-right: 5px; /* Add spacing to the right of strong tags */
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    margin: 0;
+    text-align: center;
+}
+
+.profile-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-info p {
+    margin: 0 0 10px;
+}
+
+.profile-info p strong {
+    font-weight: bold;
+}
+
+.profile-public {
+    color: #28a745;
+}
+
+.profile-public::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #28a745;
+    border-radius: 50%;
+    margin-right: 5px;
 }

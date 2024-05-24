@@ -27,4 +27,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   .catch(error => {
     console.error('Error logging in:', error);
   });
+
+  document.getElementById('regtButton').addEventListener('click', () => {
+    
+    window.location.href = '../reg/reg.html';
+});
 });

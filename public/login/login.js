@@ -28,8 +28,11 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     console.error('Error logging in:', error);
   });
 
-  document.getElementById('regtButton').addEventListener('click', () => {
-    
-    window.location.href = '../reg/reg.html';
+  
 });
+
+
+document.getElementById('regtButton').addEventListener('click', () => {
+    
+  window.location.href = '../reg/reg.html';
 });

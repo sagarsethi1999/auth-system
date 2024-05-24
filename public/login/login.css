@@ -45,26 +45,25 @@ input[type="password"] {
     box-sizing: border-box;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
+button[type="submit"],
+#regtButton {
+    width: 100%; /* Set button width to 100% */
+    padding: 8px;
     border: none;
     border-radius: 4px;
-    background-color: #28a745;
+    background-color: #319949;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-#regtButton {
-    background-color: #007bff;
     margin-top: 10px;
 }
 
+button[type="submit"]:hover,
 #regtButton:hover {
-    background-color: #0069d9;
+    background-color: #66b8d8;
+}
+
+button#regtButton {
+    width: auto; /* Set width to auto to fit content */
+    background-color: rgb(34, 141, 184);
 }
